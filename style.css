@@ -1,7 +1,7 @@
 :root {
-    --blue-color:#2196F3;
-    --black-color:#212121;
-    --gray-color:#757575;
-    --dark-color:#2F303A;
-    --whitegray-color:#F5F4FA;
+    --background-button-color:#2196F3;
+    --text-color:#212121;
+    --text_p-color:#757575;
+    --background-section-color:#2F303A;
+    --background-team-color:#F5F4FA;
 }
