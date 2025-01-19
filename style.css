@@ -1,10 +1,15 @@
 :root {
     --background-button-color:#2196F3;
     --text-color:#212121;
-    --text_p-color:#757575;
+    --text-p-color:#757575;
     --background-section-color:#2F303A;
     --background-team-color:#F5F4FA;
     --title-text-color:#FFFFFF;
     --footer-text-color:rgba(255, 255, 255, 0.6);
-    --header--background-color:#ECECEC;
+    --header-background-color:#ECECEC;
+    --background-all-portfolio-color:#EEEEEE;
+    --span-logo-color:#2196F3;
+    --hover-color:#2196F3;
+    --portfolio-button-color:#F5F4FA;
+
 }
