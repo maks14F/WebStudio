@@ -23,3 +23,48 @@
 body {
     font-family:var(--body-font) ;
 }
+
+.container {
+    width:1170px; 
+    margin: 0 auto;
+}
+
+.service-title {
+    padding-top:200px ;
+}
+
+.service-button {
+    margin-bottom: 200px;
+}
+
+.activity-title {
+    padding-top: 105px;
+}
+
+.activity-item:last-child {
+    padding-bottom: 108px;
+}
+
+.team-title {
+    padding-top: 87px;
+}
+
+.team-item:last-child {
+    padding-bottom: 108px;
+}
+
+.footer-logo {
+    padding-top: 66px;
+}
+
+.buttons_item:first-child {
+    padding-top: 94px;
+}
+
+.buttons_item:last-child {
+    padding-bottom: 34px;
+}
+
+.brief-item:last-child {
+    padding-bottom: 94px;
+}

@@ -10,126 +10,134 @@
 <body>
     <!-- Навігація -->
     <header class="header">
-        <a href="index.html" class="header-logo">
-            <p class="header-text">
-                <span class="header-span">Web</span>Studio\
-            </p>
-        </a>
-        <nav class="header-nav">
-            <ul class="header-list">
-                <li class="header-item"><a href="#">Студія</a></li>
-                <li class="header-item"><a href="portfolio.html">Портфоліо</a></li>
-                <li class="header-item"><a href="#">Контакти</a></li>
+        <div class="container">
+            <a href="index.html" class="header-logo">
+                <p class="header-text">
+                    <span class="header-span">Web</span>Studio
+                </p>
+            </a>
+            <nav class="header-nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="#">Студія</a></li>
+                    <li class="header-item"><a href="portfolio.html">Портфоліо</a></li>
+                    <li class="header-item"><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="header-roster">
+                <li class="header-element"><a href="mailto:info@devstudio.com" class="header-reference">info@devstudio.com</a></li>
+                <li class="header-element"><a href="tel:+380961111111" class="header-reference">+38 096 111 11 11</a></li>
             </ul>
-        </nav>
-        <ul class="header-roster">
-            <li class="header-element"><a href="mailto:info@devstudio.com" class="header-reference">info@devstudio.com</a></li>
-            <li class="header-element"><a href="tel:+380961111111" class="header-reference">+38 096 111 11 11</a></li>
-        </ul>
+        </div>
     </header>
     <main>
         <!-- Вибір конкретного портфоліо -->
         <section class="buttons" aria-label="Кнопки для вибору">
-            <ul class="buttons_list">
-                <li class="buttons_item">
-                    <button class="buttons_btn" type="button">Усі</button>
-                </li>
-                <li class="buttons_item">
-                    <button class="buttons_btn" type="button">Веб-сайти</button>
-                </li>
-                <li class="buttons_item">
-                    <button class="buttons_btn" type="button">Додатки</button>
-                </li>
-                <li class="buttons_item">
-                    <button class="buttons_btn" type="button">Дизайн</button>
-                </li>
-                <li class="buttons_item">
-                    <button class="buttons_btn" type="button">Маркетинг</button>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="buttons_list">
+                    <li class="buttons_item">
+                        <button class="buttons_btn" type="button">Усі</button>
+                    </li>
+                    <li class="buttons_item">
+                        <button class="buttons_btn" type="button">Веб-сайти</button>
+                    </li>
+                    <li class="buttons_item">
+                        <button class="buttons_btn" type="button">Додатки</button>
+                    </li>
+                    <li class="buttons_item">
+                        <button class="buttons_btn" type="button">Дизайн</button>
+                    </li>
+                    <li class="buttons_item">
+                        <button class="buttons_btn" type="button">Маркетинг</button>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Усе портфоліо -->
         <section class="brief" aria-label="Секція з усім портфоліо">
-            <ul class="brief_list">
-                <li class="brief-item">
-                    <a class="brief-link" href="">
-                        <img class="brief-image" src="./image/Techno.png" alt="Технокряк">
-                        <h3 class="brief-title">Технокряк</h3>
-                        <p class="brief-desc">Веб-сайт</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/poster.png" alt="Постер">
-                        <h3 class="brief-title">Постер New Orlean vs Golden Star</h3>
-                        <p class="brief-desc">Дизайн</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/restouran.png" alt="Ресторан">
-                        <h3 class="brief-title">Ресторан Seafood</h3>
-                        <p class="brief-desc">Додаток</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/prime.png" alt="Проєкт Prime">
-                        <h3 class="brief-title">Проєкт Prime</h3>
-                        <p class="brief-desc">Маркетинг</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/boxes.png" alt="Проєкт Boxes">
-                        <h3 class="brief-title">Проєкт Boxes</h3>
-                        <p class="brief-desc">Додаток</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/borders.png" alt="Немає меж">
-                        <h3 class="brief-title">Inspiration has no Borders</h3>
-                        <p class="brief-desc">Веб-сайт</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/edition.png" alt="Книга лімітована колекція">
-                        <h3 class="brief-title">Видання Limited Edition</h3>
-                        <p class="brief-desc">Дизайн</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/lab.png" alt="Проєкт LAB">
-                        <h3 class="brief-title">Проєкт LAB</h3>
-                        <p class="brief-desc">Маркетинг</p>
-                    </a>
-                </li>
-                <li class="brief-item">
-                    <a class="brief-link" href="#">
-                        <img class="brief_image" src="./image/bussines.png" alt="Бізнес">
-                        <h3 class="brief-title">Growing Business</h3>
-                        <p class="brief-desc">Додаток</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="brief_list">
+                    <li class="brief-item">
+                        <a class="brief-link" href="">
+                            <img class="brief-image" src="./image/Techno.png" alt="Технокряк">
+                            <h3 class="brief-title">Технокряк</h3>
+                            <p class="brief-desc">Веб-сайт</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/poster.png" alt="Постер">
+                            <h3 class="brief-title">Постер New Orlean vs Golden Star</h3>
+                            <p class="brief-desc">Дизайн</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/restouran.png" alt="Ресторан">
+                            <h3 class="brief-title">Ресторан Seafood</h3>
+                            <p class="brief-desc">Додаток</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/prime.png" alt="Проєкт Prime">
+                            <h3 class="brief-title">Проєкт Prime</h3>
+                            <p class="brief-desc">Маркетинг</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/boxes.png" alt="Проєкт Boxes">
+                            <h3 class="brief-title">Проєкт Boxes</h3>
+                            <p class="brief-desc">Додаток</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/borders.png" alt="Немає меж">
+                            <h3 class="brief-title">Inspiration has no Borders</h3>
+                            <p class="brief-desc">Веб-сайт</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/edition.png" alt="Книга лімітована колекція">
+                            <h3 class="brief-title">Видання Limited Edition</h3>
+                            <p class="brief-desc">Дизайн</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/lab.png" alt="Проєкт LAB">
+                            <h3 class="brief-title">Проєкт LAB</h3>
+                            <p class="brief-desc">Маркетинг</p>
+                        </a>
+                    </li>
+                    <li class="brief-item">
+                        <a class="brief-link" href="#">
+                            <img class="brief_image" src="./image/bussines.png" alt="Бізнес">
+                            <h3 class="brief-title">Growing Business</h3>
+                            <p class="brief-desc">Додаток</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <a href="index.html" class="footer-logo">
-            <p class="logo_text">
-                <span class="logo_span">Web</span>Studio\
-            </p>
-        </a>
-        <address class="footer-address">
-            <ul class="footer-list">
-                <li class="footer-item"><a href="https://maps.app.goo.gl/B15ud91DK2bjN8EE8" class="footer-link">м. Київ, пр-т Лесі Українки, 26</a></li>
-                <li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a></li>
-                <li class="footer-item"><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+        <div class="container">
+            <a href="index.html" class="footer-logo">
+                <p class="footer_text">
+                    <span class="footer_span">Web</span>Studio
+                </p>
+            </a>
+            <address class="footer-address">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="https://maps.app.goo.gl/B15ud91DK2bjN8EE8" class="footer-link">м. Київ, пр-т Лесі Українки, 26</a></li>
+                    <li class="footer-item"><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a></li>
+                    <li class="footer-item"><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
