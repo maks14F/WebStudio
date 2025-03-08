@@ -14,14 +14,14 @@
     --span-logo-color:#2196F3;
     --hover-color:#2196F3;
     --portfolio-button-color:#F5F4FA;
-
+    --stroke-color:#EEEEEE;
     --body-font:'Roboto',sans-serif;
     --logo-font:'Raleway'.sans-serif;
 }
 
 
 body {
-    font-family:var(--body-font) ;
+    font-family:var(--body-font);
 }
 
 .container {
@@ -29,32 +29,101 @@ body {
     margin: 0 auto;
 }
 
+.header-list a:hover {
+    color: var(--hover-color);
+}
+
+.header-roster a:hover {
+    color: var(--hover-color);
+}
+
+
+header {
+    display: flex;
+    
+}
+
+.header-span {
+    color: var(--span-logo-color);
+}
+
+.header-list {
+    display: flex;
+    flex-direction: row;
+    margin-left: 95px;
+    gap: 52px;
+    margin-top: 29px;
+    
+}
+
+.header-list a {
+    color: var(--text-color);
+    font-weight: 550;
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+}
+
+.header-roster a {
+    color: var(--text-p-color);
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+    
+}
+
+header {
+    height: 80px;
+}
+
+.header-roster {
+    display: flex;
+    flex-direction: row;
+    margin-left: 346px;
+    gap: 52px;
+    margin-top: 29px;
+}
+
+.header-text {
+    color: black;
+    font-weight: 650;
+    font-family: 'Raleway',sans-serif;
+    font-size: 22px;
+    margin-top: 26px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .service-title {
     padding-top:200px ;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 6%;
+    font-weight: 900;
+    color: white;
+    font-family: "Roboto",sans-serif;
 }
 
 .service-button {
-    margin-bottom: 200px;
+    margin-bottom: 170px;
+    margin-top: 30px;
+    padding: 17px 32px;
+    background-color: var(--background-button-color);
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    font-family: "Roboto",sans-serif;
 }
 
-.activity-title {
-    padding-top: 105px;
-}
-
-.activity-item:last-child {
-    padding-bottom: 108px;
-}
-
-.team-title {
-    padding-top: 87px;
-}
-
-.team-item:last-child {
-    padding-bottom: 108px;
-}
-
-.footer-logo {
-    padding-top: 66px;
+.service {
+    text-align: center;
+    background-color: var(--background-section-color);
+    
 }
 
 .buttons_list {
@@ -65,35 +134,50 @@ body {
     padding-bottom: 34px;
 }
 
-.brief-item:last-child {
-    padding-bottom: 94px;
-}
 
-.activity-img {
-    width:370px;
-    height:294px;
-}
-
-.team-img  {
-    width: 270px;
-    height: 260px;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-list, .header-roster {
+.details-list {
     display: flex;
     flex-direction: row;
-    gap: 52px;
+    padding-top: 95px;
+    font-family: 'Roboto',sans-serif;
+    justify-content: center;
+    gap: 35px;
 }
 
-.detail-list {
-    display: flex;
-    flex-direction: row;
+.details-subtitle {
+    font-weight:600;
+    color: var(--text-color);
+}
+
+.details-desc {
+    font-size:13px;
+    padding-top: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: var(--text-p-color);
+    line-height: 1.5;
+}
+
+.details-item {
+    width: 265px;
+    height:67px;
+}
+
+
+
+.activity-title {
+    padding-top: 105px;
+    font-size: 38px;
+    letter-spacing: 0.2;
+    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    margin-bottom: 58px;
+    color: var(--text-color);
+}
+
+.activity-item:last-child {
+    padding-bottom: 108px;
 }
 
 .activity-list {
@@ -102,11 +186,103 @@ header .container {
     gap: 30px;
 }
 
+.activity-img {
+    width:370px;
+    height:294px;
+}
+
+
+.team {
+    background-color: var(--background-team-color);
+}
+
+.team-title {
+    padding-top: 87px;
+    text-align: center;
+    margin-bottom: 53px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto',sans-serif;
+    color: var(--text-color);
+}
+
+.team-subtitle {
+    padding-top: 30px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.team-desc {
+    color: var(--text-p-color);
+    font-size: 15px;
+    font-family: 'Roboto',sans-serif;
+}
+
+.team-item:last-child {
+    padding-bottom: 108px;
+}
+
+.team-item {
+    background-color: white;
+}
+
+.team-img  {
+    width: 270px;
+    height: 260px;
+}
+
 .team-list {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    text-align: center;
 }
+
+.footer {
+    background-color: var(--background-section-color);
+    height: 238px;
+    display: flex;
+    align-items:start;
+    font-family: 'Roboto',sans-serif;
+}
+
+.footer-span {
+    color: var(--span-logo-color);
+    font-family: 'Raleway',sans-serif;
+}
+
+.footer-text {
+    color: white;
+    margin-bottom: 16px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 650;
+    font-size: 20px;
+    margin-top: 52px;
+}
+
+
+.footer-list {
+    font-size:13px;
+}
+
+.footer-item:nth-child(2) {
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+.footer-link {
+    color: var(--text-p-color);
+}
+
+
+.footer-superscription {
+    color: white;
+}
+
+
 
 .buttons_list {
     display: flex;
@@ -114,6 +290,50 @@ header .container {
     justify-content: center;
     gap: 8px;
 }
+
+
+.buttons_btn {
+    padding:6px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+.buttons_btn:hover {
+    background-color:var(--hover-color);
+    color: white;
+}
+
+.brief-item:last-child {
+    padding-bottom: 94px;
+}
+
+.brief-item {
+    font-family: 'Roboto',sans-serif;
+    border: 1px solid var(--stroke-color);
+    height: 404px;
+    width: 370px;
+}
+
+
+.brief-title {
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 14px;
+}
+
+.brief-desc {
+    color: var(--text-p-color);
+    font-size: 16px;
+    padding-top:20px;
+    padding-left: 14px;
+}
+
+
 
 .brief_image {
     width: 370px;
@@ -125,4 +345,6 @@ header .container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    padding-bottom:94px;
 }
+
