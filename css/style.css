@@ -125,7 +125,7 @@ header .container {
 
 .service {
     text-align: center;
-    background-color: var(--background-section-color);
+    background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=o-r6ezBvReEzZO3LQSttaLvF3i367omK~9PQIim0L4OJP7kcpjNRao3wwHgm0I8rJQTEaOw8A-uGG0f3uEE~Axw7GiV9dLkxXkevestbDktqM3TfUbm2hX~QXipvKiW~25qEoDM9KMiTxWiBp7Ya6XWB8EizreMFgyHzLRvKfJmYx~NNUSoV662TBnQNSMPRpQI3eMwzahPPi7MEennCZSUG~cYZKOvYz-7SP3a6C1cf6~e5bI7Pa1jsAGC2qyLJJ6~UuiPewjAEI3CgvyHIgwkO-8g~~LfVx4hFum~FOQiaGDNOqW4wi4Wb3Pc0toKDAVincciL8pt~HcjBwWGvrw__");
     
 }
 
@@ -160,9 +160,21 @@ header .container {
     line-height: 1.5;
 }
 
-.details-item {
-    width: 265px;
-    height:67px;
+
+
+.details-item::before {
+    top: 0;
+    left: 0;
+    display: block;
+    width: 270px;
+    height: 120px;
+    content: "";
+    background-image: url("./image/antenna.jpg");
+    background-size: 70px;
+    background-repeat: no-repeat;
+    position: top;
+    background-color: #F5F4FA;
+
 }
 
 
@@ -231,11 +243,15 @@ header .container {
 .team-item {
     background-color: white;
     text-align: center;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .team-img  {
     width: 270px;
     height: 260px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
 
 .team-list {
@@ -322,6 +338,7 @@ header .container {
     height: 404px;
     width: 370px;
     flex-basis: calc((100% - 60px)/3);
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
 
