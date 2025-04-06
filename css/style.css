@@ -146,7 +146,7 @@ header .container {
     gap: 35px;
 }
 
-.details-subtitle {
+.details-subtitl {
     font-weight:600;
     color: var(--text-color);
 }
