@@ -108,7 +108,7 @@ header .container {
 }
 
 .service {
-    padding-bottom: 170px;
+    padding-bottom: 200px;
     padding-top:200px
 }
 
@@ -131,11 +131,12 @@ header .container {
 
 .buttons{
     padding-top: 94px;
-    padding-bottom: 34px;
+    padding-bottom: 50px;
 }
 
 .details {    
-    padding-top: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .details-list {
@@ -179,8 +180,7 @@ header .container {
 
 
 .activity {
-    padding-top: 105px;
-    padding-bottom: 108px;
+    padding-bottom: 94px;
 }
 
 
@@ -209,8 +209,8 @@ header .container {
 
 .team {
     background-color: var(--background-team-color);
-    padding-top: 87px;
-    padding-bottom: 108px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
@@ -266,8 +266,8 @@ header .container {
     display: flex;
     align-items:start;
     font-family: 'Roboto',sans-serif;
-    padding-top: 52px;
-    padding-bottom: 64px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-span {
@@ -370,6 +370,5 @@ header .container {
     row-gap: 30px;
     column-gap: 30px;
     justify-content: center;
-    padding-bottom:94px;
 }
 
