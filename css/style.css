@@ -38,9 +38,10 @@ body {
 }
 
 
-header {
+.header {
     display: flex;
-    
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-span {
@@ -50,29 +51,27 @@ header {
 .header-list {
     display: flex;
     flex-direction: row;
-    margin-left: 95px;
     gap: 52px;
-    margin-top: 29px;
-    
 }
 
 .header-list a {
     color: var(--text-color);
     font-weight: 550;
     font-family: 'Roboto',sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .header-roster a {
     color: var(--text-p-color);
     font-family: 'Roboto',sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 550;
     
 }
 
-header {
-    height: 80px;
+.header-wrapper {
+    justify-content: space-between;
+    display: flex;
 }
 
 .header-roster {
@@ -80,7 +79,6 @@ header {
     flex-direction: row;
     margin-left: 346px;
     gap: 52px;
-    padding-top: 29px;
 }
 
 .header-text {
@@ -88,13 +86,12 @@ header {
     font-weight: 650;
     font-family: 'Raleway',sans-serif;
     font-size: 22px;
-    padding-top: 26px;
 }
 
-header .container {
+.header-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .service-title { 
@@ -125,8 +122,15 @@ header .container {
 
 .service {
     text-align: center;
-    background-image: url("https://s3-alpha-sig.figma.com/img/1131/4362/dd953143a8a4d9f86ec8d71afc0e8103?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=o-r6ezBvReEzZO3LQSttaLvF3i367omK~9PQIim0L4OJP7kcpjNRao3wwHgm0I8rJQTEaOw8A-uGG0f3uEE~Axw7GiV9dLkxXkevestbDktqM3TfUbm2hX~QXipvKiW~25qEoDM9KMiTxWiBp7Ya6XWB8EizreMFgyHzLRvKfJmYx~NNUSoV662TBnQNSMPRpQI3eMwzahPPi7MEennCZSUG~cYZKOvYz-7SP3a6C1cf6~e5bI7Pa1jsAGC2qyLJJ6~UuiPewjAEI3CgvyHIgwkO-8g~~LfVx4hFum~FOQiaGDNOqW4wi4Wb3Pc0toKDAVincciL8pt~HcjBwWGvrw__");
-    
+}
+
+.service::before {
+    display: block;
+    content: "";
+    background-image: url("./image/service_background.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .buttons{
@@ -163,19 +167,16 @@ header .container {
 
 
 
-.details-item::before {
-    top: 0;
-    left: 0;
-    display: block;
-    width: 270px;
-    height: 120px;
-    content: "";
-    background-image: url("./image/antenna.jpg");
+.details-item::before{
+    content: "";       
+    display: inline-block;
+    background-image: url("./image/antenna.jpg"); 
     background-size: 70px;
     background-repeat: no-repeat;
-    position: top;
-    background-color: #F5F4FA;
-
+    background-position: center;
+    background-color: var(--background-team-color);
+    margin-bottom: 30px;
+    background-color: #757575;
 }
 
 
@@ -313,11 +314,12 @@ header .container {
 
 
 .buttons_btn {
-    padding:6px 20px;
+    padding: 6px 20px;
     border: none;
     border-radius: 4px;
     font-weight: 500;
     font-family: 'Roboto',sans-serif;
+    line-height: 26px;
 }
 
 
@@ -338,9 +340,11 @@ header .container {
     height: 404px;
     width: 370px;
     flex-basis: calc((100% - 60px)/3);
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
 }
 
+.brief-item:hover {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+}
 
 .brief-title {
     color: var(--text-color);
