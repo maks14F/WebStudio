@@ -15,6 +15,7 @@
     --hover-color:#2196F3;
     --portfolio-button-color:#F5F4FA;
     --stroke-color:#EEEEEE;
+    --icons-background-color:#AFB1B8;
     --body-font:'Roboto',sans-serif;
     --logo-font:'Raleway'.sans-serif;
 }
@@ -33,10 +34,31 @@ body {
     color: var(--hover-color);
 }
 
-.header-roster a:hover {
+.header-reference:hover {
     color: var(--hover-color);
+    transition: color 1s ease;
 }
 
+.header-element:nth-child(1):hover .header-icon {
+    fill: var(--hover-color);
+}
+.header-element:nth-child(2):hover .header-icon {
+    fill: var(--hover-color);
+}
+
+.header-element:nth-child(1) .header-icon {
+    width: 16px;
+    height: 12px;
+    fill: var(--text-p-color);
+    transition: fill 1s ease;
+}
+
+.header-element:nth-child(2) .header-icon {
+    width: 10px;
+    height: 16px;
+    fill: var(--text-p-color);
+    transition: fill 1s ease;
+}
 
 .header {
     display: flex;
@@ -62,12 +84,14 @@ body {
 }
 
 .header-roster a {
-    color: var(--text-p-color);
     font-family: 'Roboto',sans-serif;
     font-size: 14px;
     font-weight: 550;
-    
+    display: flex;
+    gap: 10px;
+    color: var(--text-p-color);
 }
+
 
 .header-wrapper {
     justify-content: space-between;
@@ -122,17 +146,8 @@ body {
 
 .service {
     text-align: center;
-}
-
-.service::before {
-    width:100%;
-    height: 100%;
-    display: block;
-    content: "";
-    background-image: url("./image/service_background.jpg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url(../image/service_background.jpg);
+    background-repeat:no-repeat;
 }
 
 .buttons{
@@ -169,16 +184,53 @@ body {
 
 
 
-.details-item::before{
+.details-item:nth-child(1)::before{
     content: "";       
     display: inline-block;
-    background-image: url("./image/antenna.jpg"); 
+    background-image: url(../image/antenna.png); 
     background-size: 70px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--background-team-color);
+    background-color: var(--portfolio-button-color);
     margin-bottom: 30px;
-    background-color: #757575;
+    width: 270px;
+    height: 120px;
+}
+.details-item:nth-child(2)::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../image/clock.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--portfolio-button-color);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+}
+.details-item:nth-child(3)::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../image/diagram.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--portfolio-button-color);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+}
+.details-item:nth-child(4)::before {
+    content: "";
+    display: inline-block;
+    background-image: url(../image/astronaut.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--portfolio-button-color);
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
 }
 
 
@@ -264,6 +316,121 @@ body {
     text-align: center;
 }
 
+
+
+.team-wrapper {
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    padding-bottom: 30px;
+}
+
+.team-icon {
+    width:20px;
+    height: 20px;
+    fill: var(--icons-background-color);
+    transition: all 0.5s ease-in;
+}
+
+.team-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    transition: background-color 1s ease;
+    border-radius: 50%;
+}
+
+.team-link:hover {
+    border-radius: 50%;
+    background-color: #2196F3;
+}
+.team-link:hover .team-icon {
+    fill: white;
+}
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    font-weight: bold;
+    font-family: var(--body-font);
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.clients-icon {
+    fill: var(--icons-background-color);
+}
+
+.clients-item:nth-child(1) .clients-icon {
+    width: 41px;
+    height: 47px;
+}
+.clients-item:nth-child(2) .clients-icon {
+    width: 40px;
+    height: 52px;
+}
+.clients-item:nth-child(3) .clients-icon {
+    width: 44px;
+    height: 42px;
+}
+.clients-item:nth-child(4) .clients-icon {
+    width: 85px;
+    height: 41px;
+}
+.clients-item:nth-child(5) .clients-icon {
+    width: 63px;
+    height: 46px;
+}
+.clients-item:nth-child(6) .clients-icon {
+    width: 94px;
+    height: 44px;
+}
+
+.clients-item:nth-child(1) .clients-link {
+    padding: 23px 65px;
+}
+
+.clients-item:nth-child(2) .clients-link {
+    padding: 21px 65px 19px;
+}
+
+.clients-item:nth-child(3) .clients-link {
+    padding: 25px 65px 26px 62px;
+}
+
+.clients-item:nth-child(4) .clients-link {
+    padding: 25px 43px 27px;
+}
+
+.clients-item:nth-child(5) .clients-link {
+    padding: 23px 54px 24px;
+}
+
+.clients-item:nth-child(6) .clients-link {
+    padding: 23px 38px 25px;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-link {
+    border: 1px solid var(--icons-background-color);
+    border-radius: 4px;
+    display: block;
+}
+
+
+
 .footer {
     background-color: var(--background-section-color);
     display: flex;
@@ -305,7 +472,49 @@ body {
     color: white;
 }
 
+.footer-title {
+    color: white;
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 19px;
+}
 
+.footer-roster {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+}
+
+.footer-reference {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 1s ease;
+}
+
+.footer-reference:hover {
+    background-color: #2196F3;
+}
+
+
+.footer .container {
+    display: flex;
+}
+
+.footer-wrapper:nth-child(2) {
+    padding-left: 94px;
+}
 
 .buttons_list {
     display: flex;
