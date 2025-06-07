@@ -560,7 +560,7 @@ body {
 .brief-item {
     font-family: 'Roboto',sans-serif;
     border: 1px solid var(--stroke-color);
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 70px) / 3);
 }
 
 .brief-item:hover {
@@ -584,7 +584,7 @@ body {
     padding-bottom: 20px;
 }
 
-.brief-image {
+.brief_image {
     width: 100%;
 }
 
