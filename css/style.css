@@ -116,6 +116,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .service-title { 
@@ -148,6 +149,7 @@ body {
     text-align: center;
     background-image: url(../image/service_background.jpg);
     background-repeat:no-repeat;
+    background-size: cover;
 }
 
 .buttons{
@@ -366,6 +368,7 @@ body {
 
 .clients-icon {
     fill: var(--icons-background-color);
+    transition: all 0.8s ease;
 }
 
 .clients-item:nth-child(1) .clients-icon {
@@ -417,6 +420,13 @@ body {
     padding: 23px 38px 25px;
 }
 
+.clients-link:hover .clients-icon {
+    fill: var(--hover-color);
+}
+.clients-item:hover {
+    border-color:var(--hover-color);
+}
+
 .clients-list {
     display: flex;
     justify-content: center;
@@ -427,14 +437,16 @@ body {
     border: 1px solid var(--icons-background-color);
     border-radius: 4px;
     display: block;
+    transition: border 0.8s ease;
 }
 
+.clients-link:hover {
+    border-color: var(--hover-color);
+}
 
 
 .footer {
     background-color: var(--background-section-color);
-    display: flex;
-    align-items:start;
     font-family: 'Roboto',sans-serif;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -548,9 +560,7 @@ body {
 .brief-item {
     font-family: 'Roboto',sans-serif;
     border: 1px solid var(--stroke-color);
-    height: 404px;
-    width: 370px;
-    flex-basis: calc((100% - 60px)/3);
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .brief-item:hover {
@@ -563,6 +573,7 @@ body {
     font-weight: bold;
     margin-top: 20px;
     padding-left: 14px;
+    line-height: 38px;
 }
 
 .brief-desc {
@@ -570,13 +581,11 @@ body {
     font-size: 16px;
     padding-top:20px;
     padding-left: 14px;
+    padding-bottom: 20px;
 }
 
-
-
-.brief_image {
-    width: 370px;
-    height: 294px;
+.brief-image {
+    width: 100%;
 }
 
 .brief_list {
@@ -584,6 +593,5 @@ body {
     flex-wrap: wrap;
     row-gap: 30px;
     column-gap: 30px;
-    justify-content: center;
 }
 
