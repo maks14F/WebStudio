@@ -48,9 +48,36 @@
         <section class="service">
             <div class="container">
                     <h1 class="service-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br>ВАШОГО БІЗНЕСУ</h1>
-                    <button type="button" class="service-button">Замовити послугу</button>
+                    <button type="button" data-modal-open class="service-button">Замовити послугу</button>
             </div>
         </section>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <img class="modal-close_btn" data-modal-close src="./image/close.svg" alt="">
+                <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+                <form class="modal-form">
+                    <label for="name" class="modal-label">Ім'я</label>
+                    <input class="modal-input" type="text" id="name" name="name" placeholder="">
+                
+                    <label for="phone" class="modal-label">Телефон</label>
+                    <input class="modal-input" type="tel" id="phone" name="phone">
+                
+                    <label for="email" class="modal-label">Пошта</label>
+                    <input class="modal-input" type="email" id="email" name="email">
+                
+                    <label for="comment" class="modal-label">Коментар</label>
+                    <textarea class="modal-textarea" id="comment" name="comment" placeholder="Введіть текст"></textarea>
+                </form>
+                    <form class="modal-forma">
+                        <label class="modal-lab">
+                            <input type="checkbox" class="modal-checkbox"/>
+                            Погоджуюся з розсилкою та приймаю <span class="modal-span">Умови договору</span>
+                        </label>
+                    </form>
+                    <button type="submit" class="modal-btn">Відправити</button>
+            </div> 
+           
+          </div>
         <!-- Переваги -->
         <section class="details">
             <div class="container">
@@ -344,5 +371,6 @@
                 </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
