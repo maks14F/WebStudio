@@ -16,6 +16,13 @@
     --portfolio-button-color:#F5F4FA;
     --stroke-color:#EEEEEE;
     --icons-background-color:#AFB1B8;
+    --textarea-background-color:rgba(117, 117, 117, 1);
+    --input-border-color:rgba(33, 33, 33, 0.2);
+    --footer-reference-background-color:rgba(255, 255, 255, 0.1);
+    --brief-item-hover-color:rgba(0, 0, 0, 0.16);
+    --team-shadow-color:rgba(0, 0, 0, 0.2);
+    --modal-close-border-color:rgba(0, 0, 0, 0.1);
+    --backdrop-bg-color:rgba(0, 0, 0, 0.1);
     --body-font:'Roboto',sans-serif;
     --logo-font:'Raleway',sans-serif;
     --activity-text-bg:rgba(47, 48, 58, 0.8);
@@ -116,38 +123,44 @@ body {
 
 .header-list a {
     color: var(--text-color);
-    font-weight: 550;
-    font-family: 'Roboto',sans-serif;
+    font-weight: 500;
+    font-family: var(--body-font);
     font-size: 14px;
+    letter-spacing: 0.06em;
+    line-height: 1em;
 }
 
 .header-roster a {
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--body-font);
     font-size: 14px;
-    font-weight: 550;
+    font-weight: 500;
     display: flex;
     gap: 10px;
     color: var(--text-p-color);
+    letter-spacing: 0.06em;
+    line-height: 1em;
 }
 
 
 .header-wrapper {
     justify-content: space-between;
     display: flex;
+    width: 100%;
 }
 
 .header-roster {
     display: flex;
     flex-direction: row;
-    margin-left: 346px;
     gap: 52px;
 }
 
 .header-text {
-    color: black;
-    font-weight: 650;
-    font-family: 'Raleway',sans-serif;
-    font-size: 22px;
+    color:var(--text-color);
+    font-weight: 700;
+    font-family: var(--logo-font);
+    font-size: 26px;
+    letter-spacing: 0.03%;
+    line-height: 1em;
 }
 
 .header-container {
@@ -160,10 +173,10 @@ body {
 .service-title { 
     font-size: 44px;
     line-height: 60px;
-    letter-spacing: 6%;
+    letter-spacing: 0.06em;
     font-weight: 900;
-    color: white;
-    font-family: "Roboto",sans-serif;
+    color: var(--title-text-color);
+    font-family: var(--body-font);
     padding-bottom: 30px;
 }
 
@@ -173,14 +186,16 @@ body {
 }
 
 .service-button {
-    padding: 17px 32px;
+    padding: 10px 32px;
     background-color: var(--background-button-color);
     border: none;
     border-radius: 3px;
-    font-weight: 600;
-    color: white;
-    letter-spacing: 1px;
-    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    color: var(--title-text-color);
+    letter-spacing: 0.06em;
+    font-family: var(--body-font);
+    line-height: 30px;
+    font-size: 16px;
 }
 
 .service {
@@ -196,7 +211,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--backdrop-bg-color);
     opacity: 1;
 }
 
@@ -216,7 +231,7 @@ body {
     width: 528px;
     height: 581px;
     padding: 15px;
-    background-color: white;
+    background-color: var(--title-text-color);
     transform: translate(-50%, -50%);
     z-index: 1;
     border-radius: 4px;
@@ -226,7 +241,7 @@ body {
 
 .modal-close_btn {
     float: right;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--modal-close-border-color);
     border-radius: 50%;
     padding: 6px;
 }
@@ -250,7 +265,7 @@ body {
 
 .modal-label {
     font-family: var(--body-font);
-    color: rgba(117, 117, 117, 1);
+    color: var(--textarea-background-color);
     font-size: 12px;
     font-weight: 400;
     padding-bottom: 4px;
@@ -260,7 +275,7 @@ body {
 .modal-input {
     width: 448px;
     height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--input-border-color);
     border-radius: 4px;
     transition: border 0.5s ease;
 }
@@ -280,7 +295,6 @@ body {
     background-image: url(../image/symbol-defs.svg#icon-person);
     background-size: 18px;
     background-repeat: no-repeat;
-    bac
 }
 
 .modal-lab {
@@ -294,12 +308,12 @@ body {
     width:448px;
     height:120px;
     font-family: var(--body-font);
-    color: rgba(117, 117, 117, 1);
+    color: var(--textarea-background-color);
     font-size: 12px;
     font-weight: 400;
     padding-left: 16px;
     padding-top: 13px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+    border: 1px solid var(--input-border-color);
     border-radius: 4px;
     transition: border 0.5s ease;
 }
@@ -310,7 +324,7 @@ body {
     font-family: var(--body-font);
     font-weight: 700;
     border: none;
-    color: white;
+    color: var(--title-text-color);
     background-color: var(--background-button-color);
     line-height: 30px;
     letter-spacing: 1px;
@@ -339,7 +353,6 @@ body {
 }
 .buttons{
     padding-top: 94px;
-    padding-bottom: 50px;
 }
 
 .details {    
@@ -350,23 +363,26 @@ body {
 .details-list {
     display: flex;
     flex-direction: row;
-    font-family: 'Roboto',sans-serif;
-    justify-content: center;
+    font-family: var(--body-font);
     gap: 35px;
 }
 
 .details-subtitle {
-    font-weight:600;
+    font-weight:700;
     color: var(--text-color);
+    font-size: 14px;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    font-family: var(--body-font);
 }
 
 .details-desc {
-    font-size:13px;
-    padding-top: 18px;
-    letter-spacing: 0.5px;
+    font-size:14px;
+    padding-top: 10px;
     font-weight: 400;
     color: var(--text-p-color);
-    line-height: 1.5;
+    line-height: 24px;
+    letter-spacing: 0.03em;
 }
 
 
@@ -430,12 +446,12 @@ body {
 }
 
 .activity-title {
-    font-size: 38px;
+    font-size: 36px;
     letter-spacing: 0.2;
-    font-weight: 600;
-    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-family: var(--body-font);
     text-align: center;
-    margin-bottom: 58px;
+    margin-bottom: 50px;
     color: var(--text-color);
 }
 
@@ -446,7 +462,7 @@ body {
     font-family: var(--body-font);
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    color: var(--title-text-color);
     position: absolute;
     bottom: 1px;
     width: 370px;
@@ -475,42 +491,45 @@ body {
 
 .team-title {
     text-align: center;
-    padding-bottom: 53px;
-    font-size: 30px;
-    font-weight: 600;
-    font-family: 'Roboto',sans-serif;
+    padding-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--body-font);
     color: var(--text-color);
+    letter-spacing: 0.03em;
+    line-height: 1em;
 }
 
 .team-subtitle {
     padding-top: 30px;
     color: var(--text-color);
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    font-family: 'Roboto',sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: var(--body-font);
+    letter-spacing: 0.03em;
 }
 
 .team-desc {
     color: var(--text-p-color);
     font-size: 15px;
-    font-family: 'Roboto',sans-serif;
-    padding-bottom: 30px;
+    font-family: var(--body-font);
+    padding-bottom: 16px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 
 .team-item {
-    background-color: white;
+    background-color: var(--title-text-color);
     text-align: center;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 1px 0px var(--team-shadow-color);
     border-radius: 4px;
 }
 
 .team-img  {
     width: 270px;
     height: 260px;
-    border-top-right-radius: 4px;
-    border-top-left-radius: 4px;
 }
 
 .team-list {
@@ -546,10 +565,10 @@ body {
 
 .team-link:hover {
     border-radius: 50%;
-    background-color: #2196F3;
+    background-color: var(--hover-color);
 }
 .team-link:hover .team-icon {
-    fill: white;
+    fill: var(--title-text-color);
 }
 
 .clients {
@@ -563,6 +582,8 @@ body {
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
+    letter-spacing: 0.03em;
+    font-weight: 700;
 }
 
 
@@ -647,28 +668,26 @@ body {
 
 .footer {
     background-color: var(--background-section-color);
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--body-font);
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .footer-span {
     color: var(--span-logo-color);
-    font-family: 'Raleway',sans-serif;
+    font-family: var(--logo-font);
 }
 
 .footer-text {
-    color: white;
-    margin-bottom: 16px;
-    font-family: 'Raleway',sans-serif;
-    font-weight: 650;
-    font-size: 20px;
+    color: var(--title-text-color);
+    margin-bottom: 20px;
+    font-family: var(--logo-font);
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    line-height: 1em;
 }
 
-
-.footer-list {
-    font-size:13px;
-}
 
 .footer-item:nth-child(2) {
     padding-top:8px;
@@ -677,20 +696,25 @@ body {
 
 .footer-link {
     color: var(--text-p-color);
+    font-family: var(--body-font);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    font-weight: 400;
 }
 
 
 .footer-superscription {
-    color: white;
+    color: var(--title-text-color);
 }
 
 .footer-title {
-    color: white;
+    color: var(--title-text-color);
     font-family: var(--body-font);
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-bottom: 19px;
+    padding-bottom: 20px;
 }
 
 .footer-roster {
@@ -711,12 +735,12 @@ body {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--footer-reference-background-color) ;
     transition: background-color 1s ease;
 }
 
 .footer-reference:hover {
-    background-color: #2196F3;
+    background-color: var(--hover-color);
 }
 
 
@@ -728,7 +752,7 @@ body {
     padding-left: 94px;
 }
 
-.buttons_list {
+.buttons-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -736,58 +760,67 @@ body {
 }
 
 
-.buttons_btn {
-    padding: 6px 20px;
+.buttons-btn {
+    padding: 6px 25px;
     border: none;
     border-radius: 4px;
     font-weight: 500;
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--body-font);
     line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.03em;
 }
 
 
-.buttons_btn:hover {
+.buttons-btn:hover {
     background-color:var(--hover-color);
-    color: white;
+    color: var(--title-text-color);
 }
 
 
 .brief {
     padding-bottom: 94px;
+    padding-top: 50px;
 }
 
 
 .brief-item {
-    font-family: 'Roboto',sans-serif;
-    border: 1px solid var(--stroke-color);
-    flex-basis: calc((100% - 70px) / 3);
+    font-family: var(--body-font);
+    border: 1px solid var(--background-all-portfolio-color);
+    flex-basis: calc((100% - 60px) / 3);
     position: relative;
 }
 
 .brief-item:hover {
-    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16);
+    box-shadow: 1px 4px 6px 0 var(--brief-item-hover-color);
 }
 
 .brief-title {
     color: var(--text-color);
     font-size: 18px;
-    font-weight: bold;
     margin-top: 20px;
-    padding-left: 14px;
+    padding-left: 24px;
     line-height: 38px;
+    font-weight: 700;
+    font-family: var(--body-font);
+    letter-spacing: 0.06em;
 }
 
 .brief-desc {
     color: var(--text-p-color);
     font-size: 16px;
-    padding-top:20px;
-    padding-left: 14px;
+    padding-top:4px;
+    padding-left: 24px;
     padding-bottom: 20px;
+    font-weight: 400;
+    font-family: var(--body-font);
+    letter-spacing: 0.03em;
+    line-height: 30px;
 }
 
 
 .brief-overlay {
-    background-color: #2196F3;
+    background-color: var(--hover-color);
 }
 
 .brief-overlay_text {
@@ -802,27 +835,26 @@ body {
 .brief-overlay {
     position: absolute;
     width: 100%;
-    height: 290px;
-    background-color: #2196F3;
+    height: 294px;
+    background-color: var(--hover-color);
     opacity: 0;
     top: 0px;
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease;
     margin: 0
 }
 
 .brief-item:hover .brief-overlay {
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
-.brief-item:hover .brief-overlay_text {
-    opacity: 1;
-}
 
-.brief_image {
+
+.brief-image {
     width: 100%;
+    height: 294px;
 }
 
-.brief_list {
+.brief-list {
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;

@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Навігація -->
-    <header class = 'header'>
+    <header class='header'>
         <div class="container header-container">
             <a href="index.html" class="header-logo">
                 <p class="header-text">
@@ -25,8 +25,20 @@
                     </ul>
                 </nav>
                 <ul class="header-roster">
-                    <li class="header-element"><a href="mailto:info@devstudio.com" class="header-reference">info@devstudio.com</a></li>
-                    <li class="header-element"><a href="tel:+380961111111" class="header-reference">+38 096 111 11 11</a></li>
+                    <li class="header-element">
+                        <a href="mailto:info@devstudio.com" class="header-reference">
+                            <svg class="header-icon">
+                                <use href="./image/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="header-element">
+                        <a href="tel:+380961111111" class="header-reference">
+                            <svg class="header-icon">
+                                <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -35,21 +47,21 @@
         <!-- Вибір конкретного портфоліо -->
         <section class="buttons" aria-label="Кнопки для вибору">
             <div class="container">
-                <ul class="buttons_list">
-                    <li class="buttons_item">
-                        <button class="buttons_btn" type="button">Усі</button>
+                <ul class="buttons-list">
+                    <li class="buttons-item">
+                        <button class="buttons-btn" type="button">Усі</button>
                     </li>
-                    <li class="buttons_item">
-                        <button class="buttons_btn" type="button">Веб-сайти</button>
+                    <li class="buttons-item">
+                        <button class="buttons-btn" type="button">Веб-сайти</button>
                     </li>
-                    <li class="buttons_item">
-                        <button class="buttons_btn" type="button">Додатки</button>
+                    <li class="buttons-item">
+                        <button class="buttons-btn" type="button">Додатки</button>
                     </li>
-                    <li class="buttons_item">
-                        <button class="buttons_btn" type="button">Дизайн</button>
+                    <li class="buttons-item">
+                        <button class="buttons-btn" type="button">Дизайн</button>
                     </li>
-                    <li class="buttons_item">
-                        <button class="buttons_btn" type="button">Маркетинг</button>
+                    <li class="buttons-item">
+                        <button class="buttons-btn" type="button">Маркетинг</button>
                     </li>
                 </ul>
             </div>
@@ -57,7 +69,7 @@
         <!-- Усе портфоліо -->
         <section class="brief" aria-label="Секція з усім портфоліо">
             <div class="container">
-                <ul class="brief_list">
+                <ul class="brief-list">
                     <li class="brief-item">
                         <a class="brief-link" href="">
                             <img class="brief-image" src="./image/Techno.jpg" alt="Технокряк">
@@ -72,7 +84,7 @@
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/poster.jpg" alt="Постер">
+                            <img class="brief-image" src="./image/poster.jpg" alt="Постер">
                             <h3 class="brief-title">Постер New Orlean vs Golden Star</h3>
                             <p class="brief-desc">Дизайн</p>
                             <div class="brief-overlay">
@@ -83,7 +95,7 @@
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/restouran.jpg" alt="Ресторан">
+                            <img class="brief-image" src="./image/restouran.jpg" alt="Ресторан">
                             <h3 class="brief-title">Ресторан Seafood</h3>
                             <p class="brief-desc">Додаток</p>
                             <div class="brief-overlay">
@@ -95,7 +107,7 @@
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/prime.jpg" alt="Проєкт Prime">
+                            <img class="brief-image" src="./image/prime.jpg" alt="Проєкт Prime">
                             <h3 class="brief-title">Проєкт Prime</h3>
                             <p class="brief-desc">Маркетинг</p>
                             <div class="brief-overlay">
@@ -107,7 +119,7 @@
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/boxes.jpg" alt="Проєкт Boxes">
+                            <img class="brief-image" src="./image/boxes.jpg" alt="Проєкт Boxes">
                             <h3 class="brief-title">Проєкт Boxes</h3>
                             <p class="brief-desc">Додаток</p>
                             <div class="brief-overlay">
@@ -115,15 +127,11 @@
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
-                            <div class="brief-overlay">
-                                <p class="brief-overlay_text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
-                                вичерпні відомості про компанію чи приватну особу.</p>
-                            </div>
                         </a>
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/borders.jpg" alt="Немає меж">
+                            <img class="brief-image" src="./image/borders.jpg" alt="Немає меж">
                             <h3 class="brief-title">Inspiration has no Borders</h3>
                             <p class="brief-desc">Веб-сайт</p>
                             <div class="brief-overlay">
@@ -134,7 +142,7 @@
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/edition.jpg" alt="Книга лімітована колекція">
+                            <img class="brief-image" src="./image/edition.jpg" alt="Книга лімітована колекція">
                             <h3 class="brief-title">Видання Limited Edition</h3>
                             <p class="brief-desc">Дизайн</p>
                             <div class="brief-overlay">
@@ -145,7 +153,7 @@
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/lab.jpg" alt="Проєкт LAB">
+                            <img class="brief-image" src="./image/lab.jpg" alt="Проєкт LAB">
                             <h3 class="brief-title">Проєкт LAB</h3>
                             <p class="brief-desc">Маркетинг</p>
                             <div class="brief-overlay">
@@ -156,7 +164,7 @@
                     </li>
                     <li class="brief-item">
                         <a class="brief-link" href="#">
-                            <img class="brief_image" src="./image/bussines.jpg" alt="Бізнес">
+                            <img class="brief-image" src="./image/bussines.jpg" alt="Бізнес">
                             <h3 class="brief-title">Growing Business</h3>
                             <p class="brief-desc">Додаток</p>
                             <div class="brief-overlay">
