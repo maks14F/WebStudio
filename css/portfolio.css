@@ -134,7 +134,31 @@ body {
 
 .header-span {
     color: var(--span-logo-color);
+    animation: colorspan 2s infinite alternate;
 }
+
+
+
+@keyframes colorlogo {
+    0% {
+        color: var(--text-color);
+    }
+
+    100% {
+        color: var(--span-logo-color);
+    }
+}
+
+@keyframes colorspan {
+    0% {
+        color: var(--span-logo-color);
+    }
+
+    100% {
+        color: var(--text-color);
+    }
+}
+
 
 .header-list {
     display: flex;
@@ -190,6 +214,7 @@ body {
     letter-spacing: 0.03%;
     line-height: 1em;
     padding-right: 93px;
+    animation: colorlogo 2s infinite alternate;
 }
 
 .header-container {
@@ -245,6 +270,10 @@ body {
     border: 1px solid var(--background-all-portfolio-color);
     flex-basis: calc((100% - 60px) / 3);
     position: relative;
+    z-index: 2;
+    transition-property: box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .brief-item:hover {
@@ -275,10 +304,6 @@ body {
 }
 
 
-.brief-overlay {
-    background-color: var(--hover-color);
-}
-
 .brief-overlay_text {
     font-family: var(--body-font);
     font-weight: 400;
@@ -290,19 +315,22 @@ body {
 
 .brief-overlay {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 294px;
     background-color: var(--hover-color);
     opacity: 0;
-    top: 0px;
-    transition-property: opacity;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-    margin: 0
+    margin: 0;
+    transform: translateY(100%);
+    transition-timing-function: ease;
+    transition-property: transform;
+    transition-duration: 500ms;
 }
 
 .brief-item:hover .brief-overlay {
     opacity: 0.9;
+    transform: translateY(0);
 }
 
 
