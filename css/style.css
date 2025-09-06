@@ -31,6 +31,8 @@
 
 body {
     font-family:var(--body-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .container {
@@ -186,24 +188,18 @@ body {
 .header-list a {
     color: var(--text-color);
     font-weight: 500;
-    font-family: var(--body-font);
-    font-size: 14px;
     letter-spacing: 0.06em;
-    line-height: 1em;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
 }
 
-.header-roster a {
-    font-family: var(--body-font);
-    font-size: 14px;
+.header-roster a { 
     font-weight: 500;
     display: flex;
     gap: 10px;
     color: var(--text-p-color);
     letter-spacing: 0.06em;
-    line-height: 1em;
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
@@ -228,8 +224,6 @@ body {
     font-weight: 700;
     font-family: var(--logo-font);
     font-size: 26px;
-    letter-spacing: 0.03%;
-    line-height: 1em;
     padding-right: 93px;
     animation: colorlogo 2s infinite alternate;
 }
@@ -247,14 +241,9 @@ body {
     letter-spacing: 0.06em;
     font-weight: 900;
     color: var(--title-text-color);
-    font-family: var(--body-font);
     padding-bottom: 30px;
 }
 
-.service {
-    padding-bottom: 200px;
-    padding-top:200px
-}
 
 .service-button {
     padding: 10px 32px;
@@ -264,7 +253,6 @@ body {
     font-weight: 700;
     color: var(--title-text-color);
     letter-spacing: 0.06em;
-    font-family: var(--body-font);
     line-height: 30px;
     font-size: 16px;
     animation: pulse 3s infinite;
@@ -293,6 +281,8 @@ body {
     background-image: url(../image/service_background.jpg);
     background-repeat:no-repeat;
     background-size: cover;
+    padding-bottom: 200px;
+    padding-top:200px
 }
 
 .backdrop {
@@ -345,7 +335,6 @@ body {
 
 .modal-title {
     font-weight: 700;
-    font-family: var(--body-font);
     font-size: 20px;
     padding-top: 40px;
     letter-spacing: 1px;
@@ -361,10 +350,8 @@ body {
 }
 
 .modal-label {
-    font-family: var(--body-font);
     color: var(--textarea-background-color);
     font-size: 12px;
-    font-weight: 400;
     padding-bottom: 4px;
     padding-top: 10px;
 }
@@ -406,10 +393,8 @@ body {
 .modal-textarea {
     width:448px;
     height:120px;
-    font-family: var(--body-font);
     color: var(--textarea-background-color);
     font-size: 12px;
-    font-weight: 400;
     padding-left: 16px;
     padding-top: 13px;
     border: 1px solid var(--input-border-color);
@@ -422,7 +407,6 @@ body {
 .modal-btn {
     padding: 10px 52px;
     font-size: 16px;
-    font-family: var(--body-font);
     font-weight: 700;
     border: none;
     color: var(--title-text-color);
@@ -438,9 +422,6 @@ body {
 }
 
 .modal-forma {
-    font-family: var(--body-font);
-    font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
     padding-top:20px;
     padding-bottom:30px;
@@ -466,26 +447,19 @@ body {
 .details-list {
     display: flex;
     flex-direction: row;
-    font-family: var(--body-font);
-    gap: 35px;
+    gap: 30px;
 }
 
 .details-subtitle {
     font-weight:700;
     color: var(--text-color);
-    font-size: 14px;
-    line-height: 1em;
-    letter-spacing: 0.03em;
-    font-family: var(--body-font);
 }
 
 .details-desc {
     font-size:14px;
     padding-top: 10px;
-    font-weight: 400;
     color: var(--text-p-color);
     line-height: 24px;
-    letter-spacing: 0.03em;
 }
 
 
@@ -550,19 +524,15 @@ body {
 
 .activity-title {
     font-size: 36px;
-    letter-spacing: 0.2;
     font-weight: 700;
-    font-family: var(--body-font);
     text-align: center;
     margin-bottom: 50px;
     color: var(--text-color);
 }
 
 .activity-text {
-    padding: 27px 108px;
+    padding: 27px 94px;
     background-color: var(--activity-text-bg);
-    font-size: 14px;
-    font-family: var(--body-font);
     font-weight: 700;
     text-transform: uppercase;
     color: var(--title-text-color);
@@ -570,7 +540,9 @@ body {
     bottom: 1px;
     width: 370px;
     height: 70px;
+    text-align: center;
 }
+
 
 
 .activity-list {
@@ -597,10 +569,7 @@ body {
     padding-bottom: 50px;
     font-size: 36px;
     font-weight: 700;
-    font-family: var(--body-font);
     color: var(--text-color);
-    letter-spacing: 0.03em;
-    line-height: 1em;
 }
 
 .team-subtitle {
@@ -609,17 +578,12 @@ body {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
-    font-family: var(--body-font);
-    letter-spacing: 0.03em;
 }
 
 .team-desc {
     color: var(--text-p-color);
-    font-size: 15px;
-    font-family: var(--body-font);
+    font-size: 16px;
     padding-bottom: 16px;
-    font-weight: 400;
-    letter-spacing: 0.03em;
 }
 
 
@@ -685,11 +649,10 @@ body {
 
 .clients-title {
     font-weight: bold;
-    font-family: var(--body-font);
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
-    letter-spacing: 0.03em;
+    
     font-weight: 700;
 }
 
@@ -779,7 +742,6 @@ body {
 
 .footer {
     background-color: var(--background-section-color);
-    font-family: var(--body-font);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -795,8 +757,8 @@ body {
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
-    letter-spacing: 0.03em;
-    line-height: 1em;
+    
+    
 }
 
 
@@ -807,22 +769,18 @@ body {
 
 .footer-link {
     color: var(--text-p-color);
-    font-family: var(--body-font);
-    font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
-    font-weight: 400;
 }
 
 
 .footer-superscription {
     color: var(--title-text-color);
+    line-height: 24px;
 }
 
 .footer-title {
     color: var(--title-text-color);
-    font-family: var(--body-font);
-    font-size: 14px;
+    
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 20px;
