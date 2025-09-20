@@ -26,6 +26,7 @@
     --body-font:'Roboto',sans-serif;
     --logo-font:'Raleway',sans-serif;
     --activity-text-bg:rgba(47, 48, 58, 0.8);
+    --footer-link-color:rgba(255, 255, 255, 0.6);
 }
 
 
@@ -286,10 +287,6 @@ body {
     padding-top:200px;
 }
 
-.service  {
-    background-color: #2F303A;
-    z-index: 3;
-}
 
 .backdrop {
     position: fixed;
@@ -774,7 +771,7 @@ body {
 }
 
 .footer-link {
-    color: var(--text-p-color);
+    color:var(--footer-link-color);
     line-height: 24px;
 }
 
