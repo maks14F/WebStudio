@@ -26,6 +26,7 @@
     --logo-font: 'Raleway', sans-serif;
     --activity-text-bg: rgba(47, 48, 58, 0.8);
     --header-border-color:#ECECEC;
+    --buttons-text-color:#212121;
 }
 
 body {
@@ -261,6 +262,7 @@ body {
     transition-duration: 250ms;
     font-size:16px;
     font-family:var(--body-font);
+    color: var(--buttons-text-color);
 }
 
 
