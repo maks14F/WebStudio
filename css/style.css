@@ -760,8 +760,7 @@ body {
     font-family: var(--logo-font);
     font-weight: 700;
     font-size: 26px;
-    
-    
+
 }
 
 
@@ -783,7 +782,6 @@ body {
 
 .footer-title {
     color: var(--title-text-color);
-    
     font-weight: bold;
     text-transform: uppercase;
     padding-bottom: 20px;
