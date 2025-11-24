@@ -186,7 +186,7 @@ body {
     gap: 52px;
 }
 
-.header-list a {
+.header-link {
     color: var(--text-color);
     font-weight: 500;
     letter-spacing: 0.06em;
@@ -195,7 +195,7 @@ body {
     transition-duration: 250ms;
 }
 
-.header-roster a { 
+.header-reference { 
     font-weight: 500;
     display: flex;
     gap: 10px;
@@ -204,6 +204,8 @@ body {
     transition-property: color;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -217,7 +219,7 @@ body {
 .header-roster {
     display: flex;
     flex-direction: row;
-    gap: 52px;
+    gap: 30px;
 }
 
 .header-text {
@@ -665,55 +667,8 @@ body {
     transition-property: fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
-}
-
-.clients-item:nth-child(1) .clients-icon {
-    width: 41px;
-    height: 47px;
-}
-.clients-item:nth-child(2) .clients-icon {
-    width: 40px;
-    height: 52px;
-}
-.clients-item:nth-child(3) .clients-icon {
-    width: 44px;
-    height: 42px;
-}
-.clients-item:nth-child(4) .clients-icon {
-    width: 85px;
-    height: 41px;
-}
-.clients-item:nth-child(5) .clients-icon {
-    width: 63px;
-    height: 46px;
-}
-.clients-item:nth-child(6) .clients-icon {
-    width: 94px;
-    height: 44px;
-}
-
-.clients-item:nth-child(1) .clients-link {
-    padding: 23px 65px;
-}
-
-.clients-item:nth-child(2) .clients-link {
-    padding: 21px 65px 19px;
-}
-
-.clients-item:nth-child(3) .clients-link {
-    padding: 25px 65px 26px 62px;
-}
-
-.clients-item:nth-child(4) .clients-link {
-    padding: 25px 43px 27px;
-}
-
-.clients-item:nth-child(5) .clients-link {
-    padding: 23px 54px 24px;
-}
-
-.clients-item:nth-child(6) .clients-link {
-    padding: 23px 38px 25px;
+    width: 106px;
+    height: 60px;
 }
 
 .clients-link:hover .clients-icon {
@@ -736,6 +691,7 @@ body {
     transition-property: border;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 250ms;
+    padding: 16px 32px;
 }
 
 .clients-link:hover {
