@@ -19,6 +19,7 @@
     --textarea-background-color:rgba(117, 117, 117, 1);
     --input-border-color:rgba(33, 33, 33, 0.2);
     --footer-reference-background-color:rgba(255, 255, 255, 0.1);
+    --footer-input-color:rgba(255, 255, 255, 0.6);
     --brief-item-hover-color:rgba(0, 0, 0, 0.16);
     --team-shadow-color:rgba(0, 0, 0, 0.2);
     --modal-close-border-color:rgba(0, 0, 0, 0.1);
@@ -27,6 +28,7 @@
     --logo-font:'Raleway',sans-serif;
     --activity-text-bg:rgba(47, 48, 58, 0.8);
     --footer-link-color:rgba(255, 255, 255, 0.6);
+    --input-border-color:rgba(255, 255, 255, 0.3);
 }
 
 
@@ -790,6 +792,47 @@ body {
 
 .footer-wrapper:nth-child(2) {
     padding-left: 94px;
+    padding-right: 93px;
 }
 
+.footer-mark {
+    width: 24px;
+    height: 24px;
+    fill: var(--title-text-color);
+}
 
+.footer-button {
+    background-color: var(--background-button-color);
+    border: none;
+    color: var(--title-text-color);
+    font-family: var(--body-font);
+    padding: 10px 28px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-input {
+    color: var(--footer-input-color);
+    background-color: transparent;
+    border:1px solid var(--input-border-color) ;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    padding-left: 16px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-subtitle {
+    font-weight: bold;
+    color: var(--title-text-color);
+    padding-bottom: 20px;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
